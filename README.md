@@ -135,7 +135,8 @@ For issues, feature requests, or questions, please open an issue on GitHub.
 ## Authors
 
 - Development Team
-
+email: ashishkumar7807445804@gmail.com
+linked In :https://www.linkedin.com/in/ashishkumar0002/
 ---
 
 **Last Updated**: February 2026
