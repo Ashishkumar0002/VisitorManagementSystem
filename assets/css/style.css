@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    color: #333;
+    background: url("assets/bg/bg.webp") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: rgba(44, 62, 80, 0.95);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar img {
+    height: 42px;
+}
+
+.navbar strong {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-links {
+    margin-left: auto;
+}
+
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ===== PAGE CONTAINER ===== */
+.page-container {
+    padding: 25px;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: rgba(255,255,255,0.95);
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.card h2, .card h3 {
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+/* ===== TABLES ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #ffffff;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 9px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #34495e;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #eaeaea;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    padding: 7px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 2px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #2980b9;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #1f6691;
+}
+
+.btn-secondary {
+    background: #7f8c8d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #646e70;
+}
+
+.btn-danger {
+    background: #c0392b;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #962d22;
+}
+
+/* ===== FORMS ===== */
+form label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #bfc9ca;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    margin-top: 6px;
+}
+
+/* ===== LOGIN PAGE ===== */
+body.login-page {
+    background: url("assets/bg/bg.webp") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    width: 360px;
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    background: #2980b9;
+    color: #fff;
+    font-size: 15px;
+}
+
+.login-container input[type="submit"]:hover {
+    background: #1f6691;
+}
+
+.error {
+    color: #e74c3c;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+@media print {
+    .navbar,
+    .btn,
+    .page-container > .card:first-child { /* filter form hide for print */
+        display: none !important;
+    }
+    .page-container {
+        margin: 0;
+        padding: 0;
+    }
+    table {
+        box-shadow: none;
+    }
+}
+/* ===== Overstay Highlight ===== */
+.overstay {
+    background-color: #ffe6e6 !important; /* light red */
+}
+
+.overstay td {
+    border-bottom: 2px solid #c0392b;
+}
+
+.badge-overstay {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 11px;
+    border-radius: 4px;
+    background: #c0392b;
+    color: #fff;
+    margin-left: 4px;
+}
+/* ===== LOGIN PAGE LEFT TOP LOGO ===== */
+.login-logo-left {
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    z-index: 999;
+}
+
+.login-logo-left img {
+    height: 70px;
+    width: auto;
+}
+
